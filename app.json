@@ -1,0 +1,17 @@
+{
+  "name": "muze",
+  "displayName": "muze",
+  "expo": {
+    "name": "muze",
+    "slug": "muze",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
