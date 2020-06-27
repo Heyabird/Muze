@@ -16,3 +16,5 @@ Muze is a music social app.
 
     $ yarn ios
 
+    (if above step gives errors, try these solutions: https://stackoverflow.com/questions/60368805/xcrun-error-unable-to-find-utility-simctl-not-a-developer-tool-or-in-path)
+
