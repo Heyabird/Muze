@@ -1,4 +1,4 @@
-Muze is a music soical app.
+Muze is a music social app.
 
 - install Expo
 
