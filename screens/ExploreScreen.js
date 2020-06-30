@@ -6,7 +6,7 @@ const instructions = Platform.select({
   android: `Double tap R on your keyboard to reload,\nShake or press menu button for dev menu`,
 });
 
-export default function Home() {
+export default function ExploreScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Explore other users!</Text>
