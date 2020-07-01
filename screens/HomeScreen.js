@@ -9,7 +9,7 @@ const instructions = Platform.select({
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to Muze!</Text>
+      <Text style={styles.welcome}>Muze Home Screen!</Text>
     </View>
   );
 }
