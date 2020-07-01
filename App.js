@@ -45,6 +45,8 @@ export default class App extends React.Component {
       <NavigationContainer>
         <Tab.Navigator>
           <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Explore" component={ExploreScreen} />
+          <Tab.Screen name="Messages" component={MessageIndexScreen} />
           <Tab.Screen name="Preferences" component={PreferencesScreen} />
         </Tab.Navigator>
       </NavigationContainer>
