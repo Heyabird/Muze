@@ -2,10 +2,12 @@
 
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import createStackNavigator from 'react-navigation-stack';
+// import createStackNavigator from 'react-navigation-stack';
 // import createBottomTabNavigator from 'react-navigation';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
 
 
 import AccountScreen from './screens/AccountScreen'; 
@@ -19,37 +21,30 @@ import SettingsStack from './SettingsStack'
 
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
-// const AppTabNavigator = createBottomTabNavigator({
-//   Explore: <ExploreScreen/>,
-//   Messages: <MessageIndexScreen/>,
-//   Settings: <PreferencesScreen/>,
-//  },{
- 
-//    navigationOptions: ({ navigation }) => ({
-//       //define the icon for each tab here...
-//    }),
-//    tabBarOptions: {
-//      initialRouteName: 'Catalogue',
-//      activeTintColor: '#fff',
-//      inactiveTintColor: '#ddd',
-//      style: {
-//        backgroundColor: '#4d535e',
-//     }
-//  }
-// });
+function Messages() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="MessageIndexScreen" component={MessageIndexScreen} />
+      <Stack.Screen name="MessageShowScreen" component={MessageShowScreen} />
+    </Stack.Navigator>
+  );
+}
+// export default Messages
 
-export default class App extends React.Component {
-  render() {
+function App () {
     return (
       <NavigationContainer>
         <Tab.Navigator>
           <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Explore" component={ExploreScreen} />
+          <Tab.Screen name="Messages" component={Messages} />
           <Tab.Screen name="Preferences" component={PreferencesScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );
-  }
 }
+export default App
 
 //configure navigators...
