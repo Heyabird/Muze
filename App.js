@@ -17,6 +17,7 @@ import HomeScreen from './screens/HomeScreen';
 import MessageIndexScreen from'./screens/MessageIndexScreen';
 import MessageShowScreen from'./screens/MessageShowScreen';
 import PreferencesScreen from './screens/PreferencesScreen'
+import SettingsScreen from './screens/SettingsScreen';
 import SettingsStack from './SettingsStack'
 
 
@@ -33,6 +34,16 @@ function Messages() {
 }
 // export default Messages
 
+function Settings() {
+  return(
+    <Stack.Navigator>
+      <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
+      <Stack.Screen name="Account" component={AccountScreen}/>
+      <Stack.Screen name="Preferences" component={PreferencesScreen}/>
+    </Stack.Navigator>
+  )
+}
+
 function App () {
     return (
       <NavigationContainer>
@@ -40,7 +51,7 @@ function App () {
           <Tab.Screen name="Home" component={HomeScreen} />
           <Tab.Screen name="Explore" component={ExploreScreen} />
           <Tab.Screen name="Messages" component={Messages} />
-          <Tab.Screen name="Preferences" component={PreferencesScreen} />
+          <Tab.Screen name="Settings" component={Settings} />
         </Tab.Navigator>
       </NavigationContainer>
     );
