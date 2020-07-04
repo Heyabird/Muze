@@ -9,7 +9,7 @@ const instructions = Platform.select({
 export default function ExploreScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Explore other users!</Text>
+      <Text style={styles.welcome}>Explore</Text>
     </View>
   );
 }
@@ -17,9 +17,9 @@ export default function ExploreScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'flex-start',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
