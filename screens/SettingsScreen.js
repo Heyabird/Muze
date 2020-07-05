@@ -23,12 +23,13 @@ function SettingsScreen() {
         }
         title="Account"
       />
-            <Button
+        <Button
         onPress={() =>
           navigation.navigate('Preferences')
         }
         title="Preferences"
       />
+
     </View>
   );
 }
@@ -52,6 +53,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+
 });
 
 
