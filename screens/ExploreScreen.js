@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View, Image } from 'react-native';
 import Avatar from './avatar.jpeg'
+import Quas from './Quas.jpg'
 
 
 const instructions = Platform.select({
@@ -10,26 +11,31 @@ const instructions = Platform.select({
 
 export default function ExploreScreen() {
   return (
-    <>
-    <View style={styles.container}>
-      <Text style={styles.welcome}>Explore</Text>
+    <View style={styles.all}>
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Explore</Text>
+      </View>
+      <View style={styles.card}>
+        <Image source={require('./Quas.png')} alt="Quas" 
+          style={styles.image}
+        />
+        <Text style={styles.text}>Lord Quas</Text> 
+        {/* <p>Architect & Engineer</p>  */}
+      </View>
+      <View style={styles.card}>
+        {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
+        <Text style={styles.text}></Text> 
+        {/* <p>Architect & Engineer</p>  */}
+      </View>
     </View>
-    <View style={styles.card}>
-      {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
-      <Text style={styles.text}>Quasimoto</Text> 
-      {/* <p>Architect & Engineer</p>  */}
-    </View>
-    <View style={styles.card}>
-      {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
-      <Text style={styles.text}></Text> 
-      {/* <p>Architect & Engineer</p>  */}
-    </View>
-    </>
   );
 }
 
 
 const styles = StyleSheet.create({
+  all: {
+    // position: 'absolute'
+  },
   container: {
     // flex: 1,
     justifyContent: 'center',
@@ -39,7 +45,7 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 20,
     height: '15%'
   },
   instructions: {
@@ -64,6 +70,13 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    padding: 10
+    padding: 20,
+    fontSize: 20,
+    textAlign: 'right',
+    zIndex: 1
+  },
+  image: {
+    width: '100%',
+    zIndex: 0
   }
 });
