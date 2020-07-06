@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    height: '15%'
   },
   instructions: {
     textAlign: 'center',
@@ -55,9 +56,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#DBFFAE',
     // boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
     // transition: 0.3,
-    width: '100%',
+    // width: '100%',
     height: '50%',
-    marginBottom: 10,
+    margin: 10,
     // textAlign: 'center',
     borderRadius: 15,
   },
