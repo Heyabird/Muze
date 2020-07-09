@@ -16,7 +16,10 @@ function SettingsScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Settings!</Text>
+      <Text style={styles.welcome}>Settings</Text>
+      <View style={styles.container}>
+        <View style={styles.CircleShape} />
+      </View>
       <Button
         onPress={() =>
           navigation.navigate('Account')
@@ -52,6 +55,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  CircleShape: {
+    width: 150,
+    height: 150,
+    borderRadius: 150 / 2,
+    backgroundColor: 'yellow',
   },
 
 });
