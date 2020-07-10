@@ -13,12 +13,12 @@ export default function ExploreScreen() {
   return (
     <View style={styles.all}>
       <View style={styles.container}>
-        <Text style={styles.welcome}>Explore</Text>
+        <Text style={styles.welcome}>Match</Text>
       </View>
       <View style={styles.card}>
-        <Image source={require('./Quas.png')} alt="Quas" 
+        {/* <Image source={require('./Quas.png')} alt="Quas" 
           style={styles.image}
-        />
+        /> */}
         <Text style={styles.text}>Lord Quas</Text> 
         {/* <p>Architect & Engineer</p>  */}
       </View>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     // boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
     // transition: 0.3,
     // width: '100%',
-    height: '50%',
+    height: '40%',
     margin: 10,
     // textAlign: 'center',
     borderRadius: 15,

@@ -22,6 +22,12 @@ function SettingsScreen() {
       </View>
       <Button
         onPress={() =>
+          navigation.navigate('EditProfile')
+        }
+        title="Edit Profile"
+      />
+      <Button
+        onPress={() =>
           navigation.navigate('Account')
         }
         title="Account"
