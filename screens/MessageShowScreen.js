@@ -9,7 +9,7 @@ const instructions = Platform.select({
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Message Show!</Text>
+      <Text style={styles.welcome}>Lord Quas</Text>
     </View>
   );
 }
