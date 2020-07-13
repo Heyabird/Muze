@@ -16,12 +16,12 @@ function MessageIndexScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Message Index!</Text>
+      <Text style={styles.welcome}>Messages</Text>
       <Button
         onPress={() =>
           navigation.navigate('MessageShowScreen')
         }
-        title="View Message"
+        title="Lord Quas"
       />
     </View>
   );
