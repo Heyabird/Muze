@@ -17,6 +17,8 @@ export default function AccountScreen() {
           <Text style={styles.text}></Text> 
           {/* <p>Architect & Engineer</p>  */}
       </View>
+
+
     </>
   );
 }

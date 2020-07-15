@@ -22,10 +22,12 @@ export default function ExploreScreen() {
         <Text style={styles.text}>Lord Quas</Text> 
         {/* <p>Architect & Engineer</p>  */}
       </View>
-      <View style={styles.card}>
-        {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
+      {/* <View style={styles.card}>
         <Text style={styles.text}></Text> 
-        {/* <p>Architect & Engineer</p>  */}
+      </View> */}
+      <View style={styles.buttonContainer}>
+        <Text style={styles.button}>👎</Text>
+        <Text style={styles.button}>💬</Text>
       </View>
     </View>
   );
@@ -78,5 +80,18 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     zIndex: 0
+  },
+  buttonContainer: {
+    zIndex: 1,
+    borderColor: 'black',
+    display: 'flex'
+
+  },
+  button: {
+    borderColor: 'black',
+    fontSize: 40,
+    borderWidth: 3,
+    width: 50,
+    height: 50
   }
 });
