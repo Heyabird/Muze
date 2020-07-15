@@ -23,6 +23,12 @@ function MessageIndexScreen() {
         }
         title="Lord Quas"
       />
+      <Button
+        onPress={() =>
+          navigation.navigate('MessageShowScreen')
+        }
+        title="Noodle"
+      />
     </View>
   );
 }
@@ -46,6 +52,10 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  // Button: {
+  //   borderColor: 'black',
+  //   borderWidth: 3
+  // }
 });
 
 
