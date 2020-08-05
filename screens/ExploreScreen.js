@@ -13,19 +13,21 @@ export default function ExploreScreen() {
   return (
     <View style={styles.all}>
       <View style={styles.container}>
-        <Text style={styles.welcome}>Explore</Text>
+        <Text style={styles.welcome}>Match</Text>
       </View>
       <View style={styles.card}>
-        <Image source={require('./Quas.png')} alt="Quas" 
+        {/* <Image source={require('./Quas.png')} alt="Quas" 
           style={styles.image}
-        />
+        /> */}
         <Text style={styles.text}>Lord Quas</Text> 
         {/* <p>Architect & Engineer</p>  */}
       </View>
-      <View style={styles.card}>
-        {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
+      {/* <View style={styles.card}>
         <Text style={styles.text}></Text> 
-        {/* <p>Architect & Engineer</p>  */}
+      </View> */}
+      <View style={styles.buttonContainer}>
+        <Text style={styles.button}>👎</Text>
+        <Text style={styles.button}>💬</Text>
       </View>
     </View>
   );
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
     // boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
     // transition: 0.3,
     // width: '100%',
-    height: '50%',
+    height: '40%',
     margin: 10,
     // textAlign: 'center',
     borderRadius: 15,
@@ -78,5 +80,18 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     zIndex: 0
+  },
+  buttonContainer: {
+    zIndex: 1,
+    borderColor: 'black',
+    display: 'flex'
+
+  },
+  button: {
+    borderColor: 'black',
+    fontSize: 40,
+    borderWidth: 3,
+    width: 50,
+    height: 50
   }
 });

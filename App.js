@@ -19,6 +19,7 @@ import MessageShowScreen from'./screens/MessageShowScreen';
 import PreferencesScreen from './screens/PreferencesScreen'
 import SettingsScreen from './screens/SettingsScreen';
 import SettingsStack from './SettingsStack'
+import EditProfileScreen from './screens/EditProfileScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -38,6 +39,7 @@ function Settings() {
   return(
     <Stack.Navigator>
       <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
+      <Stack.Screen name="EditProfile" component={EditProfileScreen}/>
       <Stack.Screen name="Account" component={AccountScreen}/>
       <Stack.Screen name="Preferences" component={PreferencesScreen}/>
     </Stack.Navigator>

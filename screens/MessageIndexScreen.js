@@ -16,12 +16,18 @@ function MessageIndexScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Message Index!</Text>
+      <Text style={styles.welcome}>Messages</Text>
       <Button
         onPress={() =>
           navigation.navigate('MessageShowScreen')
         }
-        title="View Message"
+        title="Lord Quas"
+      />
+      <Button
+        onPress={() =>
+          navigation.navigate('MessageShowScreen')
+        }
+        title="Noodle"
       />
     </View>
   );
@@ -46,6 +52,10 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  // Button: {
+  //   borderColor: 'black',
+  //   borderWidth: 3
+  // }
 });
 
 

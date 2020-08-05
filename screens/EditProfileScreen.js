@@ -6,19 +6,17 @@ const instructions = Platform.select({
   android: `Double tap R on your keyboard to reload,\nShake or press menu button for dev menu`,
 });
 
-export default function AccountScreen() {
+export default function EditProfileScreen() {
   return (
     <>
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Account!</Text>
-        </View>
-      <View style={styles.card}>
-          {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
-          <Text style={styles.text}></Text> 
-          {/* <p>Architect & Engineer</p>  */}
+    <View style={styles.container}>
+      <Text style={styles.welcome}>Edit Profile</Text>
+    </View>
+    <View style={styles.card}>
+        {/* <img src={Avatar} alt="Avatar" style="width:100%"/> */}
+        <Text style={styles.text}></Text> 
+        {/* <p>Architect & Engineer</p>  */}
       </View>
-
-
     </>
   );
 }
